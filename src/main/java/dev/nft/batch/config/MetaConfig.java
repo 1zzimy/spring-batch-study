@@ -20,6 +20,7 @@ public class MetaConfig {
 		return DataSourceBuilder.create().build();
 	}
 
+	@Primary
 	@Bean
 	public PlatformTransactionManager transactionManager() {
 		return new DataSourceTransactionManager(metaSource());
