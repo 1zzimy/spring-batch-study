@@ -4,9 +4,7 @@ spring:
 
   batch:
     job:
-      enabled: true
-    jdbc:
-      initialize-schema: never
+      enabled: false
 
   datasource:
     meta:
